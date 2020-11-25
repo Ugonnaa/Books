@@ -1,5 +1,5 @@
 /* Google Font */
-@import url('https://fonts.googleapis.c2?fville&family=Lobster&family=Playfair+Display&family=Raleway:wght@100&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Libre+Baskerville&family=Lobster&family=Playfair+Display&family=Raleway:wght@100&family=Shadows+Into+Light&display=swap');
 
 /* Start everything looking like this so it allows the website to look the same on every browser to look the same */
 *,
@@ -21,35 +21,36 @@ section {
     --Raleway: "Raleway", cursive;
     --PlayfairDisplay: "PlayfairDisplay", cursive;
     --ShadowsIntoLight: "ShadowsIntoLight", cursive;
-    --Light-black: #2e2c2caf;
+    --Gaegu: "Gaegu", cursive;
+    --Light-black: #0c0c0caf;
     --bggradient: linear-gradient(to bottom,
-            black, rgba(0, 0, 0, 0.096));
+            black, rgb(248, 244, 244));
 
     --light-gray: rgba(255, 255, 255, 0.877)
 }
 
 header a {
-    font-family: var(--LibreBaskerville);
+    font-family: var(--Gaegu);
     font-size: 0.9em;
     color: whitesmoke;
 }
 
 header {
-    background: #dd2476;
+    background: rgba(0, 0, 0, 0.699), rgba(236, 229, 229, 0);
     background: var(--bggradient);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background: rgba(172, 149, 21, 0.568);
+    background: rgba(20, 18, 1, 0.945);
     min-width: 160px;
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: rgba(185, 134, 134, 0.404);
+    color: rgba(255, 255, 255, 0.863);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -76,7 +77,7 @@ header .navbar-brand {
 }
 
 header .nav-link:hover {
-    color: black;
+    color: white;
 }
 
 header .row .col-md-5 {
@@ -86,8 +87,8 @@ header .row .col-md-5 {
 header .row .col-md-7 {
     padding: 22vmin 1vmin;
     padding-bottom: 35vmin;
-    font-family: var(--Lobster);
-    color: rgb(255, 255, 255);
+    font-family: var(--Gaegu);
+    color: black, rgba(0, 0, 0, 0.164);
 }
 
 header .row .col-md-5 img {
@@ -122,35 +123,40 @@ header .container .col-md-7 button {
 
 .section-1 .row .col-md-6:last-child {
     position: relative;
+    background: rgba(255, 255, 255, 0.877);
 }
 
 .section-1 .row .col-md-6 .panel {
     position: absolute;
     top: 7vmin;
     left: -18vmin;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.877);
     border-radius: 3px;
     text-align: left;
     padding: 13vmin 5vmin 20vmin 10vmin;
-    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2) font-family: var(--Raleway);
+    box-shadow: 0px 25px 42px rgba(78, 77, 77, 0);
+    font-family: var(--Gaegu);
     z-index: 1;
 }
 
 .section-1 .row .col-md-6 .panel h1 {
     font-weight: bold;
-    padding: 0.4em 0;
-    font-size: 2em;
+    padding: 0.2em 0;
+    font-size: 1.9em;
+    font-family: var(--Gaegu);
 }
 
 .section-1 .row .col-md-6 .panel p {
-    font-size: 0.9em;
-    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+    font-family: var(--Gaegu);
+    color: rgb(0, 0, 0);
 }
 
 .cover {
     width: 100%;
     height: 55vmin;
-    background: url(img src="../assets/Characters.PNG") background-position: -24rem -19rem;
+    background: white;
+    background-position: -24rem -19rem;
     background-size: 150%;
     position: relative;
 }
@@ -168,23 +174,25 @@ header .container .col-md-7 button {
 }
 
 .numbers .rect h1 {
-    font-size: 5rem;
-    color: lightgray;
+    font-size: 15rem;
+    font-family: var(--Gaegu);
+    color: white;
 }
 
 .numbers .rect p {
-    font-family: var(--LibreBaskerville);
+    font-family: var(--Gaegu);
 }
 
 .purchase>h1 {
-    padding-top: 15vmin;
+    padding-top: 18vmin;
     padding-bottom: 0.1em;
-    font-family: var(--Lobster);
+    font-family: var(--Gaegu);
 }
 
 .purchase>p {
     color: var(--light-black);
-    font-size: 3vmin;
+    font-size: 6vmin;
+    font-family: var(--Gaegu);
     padding-bottom: 10vmin;
 }
 
@@ -199,58 +207,20 @@ header .container .col-md-7 button {
 }
 
 .cards .title {
-    background: rgba(208, 241, 241, 0.199);
+    background: black, rgba(0, 0, 0, 0.096);
     padding: 1.4rem 2.5rem;
-    font-size: 2vmin;
+    font-size: 10vmin;
+    font-family: var(--Gaegu);
 }
 
 .card .card-text {
     padding: 2.5rem 3rem;
-    color: var(--light-black);
+    color: var(--white);
 }
 
-.card-body .pricing {
-    background: rgba(208, 241, 241, 0.199);
-    border-top-right-radius: 170px;
-    border-top-left-radius: 170px;
-}
-
-.card-body.pricing>h1 {
-    font-size: 10vmin;
-    padding: 1em 0.5em;
-}
 
 .section-3 {
     height: 70vmin;
     margin-top: 15vmin;
-    background: var(--bggradient);
-}
-
-.section-3 .col-d-12>h1 {
-    padding: 2em 0 0.5em 0;
-    color: whitesmoke;
-    font-size: 6vmin;
-}
-
-.section-3 .col-md-12>p {
-    padding: 0 4em;
-    padding-bottom: 2em;
-    color: var(--light-gray);
-    font-size: 3vmin;
-}
-
-.section-3 .desktop {
-    background: white;
-    display: inline-block;
-    border-radius: 3em;
-    padding: 2vmin 4.5vmin;
-    margin: 1em;
-}
-
-.section-3 .desktop h3 {
-    font-size: 4vmin;
-}
-
-.section-3 .desktop p {
-    font-size: 2vmin;
-}
+    background: var(--light-gray: rgba(255, 255, 255, 0.877);
+    }
