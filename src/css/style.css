@@ -183,24 +183,6 @@ header .container .col-md-7 button {
     font-family: var(--Gaegu);
 }
 
-.purchase>h1 {
-    padding-top: 18vmin;
-    padding-bottom: 0.1em;
-    font-family: var(--Gaegu);
-}
-
-.purchase>p {
-    color: var(--light-black);
-    font-size: 6vmin;
-    font-family: var(--Gaegu);
-    padding-bottom: 10vmin;
-}
-
-.purchase .cards .card {
-    width: 22rem;
-    margin: 3vmin;
-}
-
 .cards div {
     padding: 0;
     margin: 0;
